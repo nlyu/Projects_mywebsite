@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type = "text/css" rel="stylesheet" href = "main.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>home</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class = "loading">
+            </div>
+            <div class = "left">
+                <div class = "name">
+                        <p style="margin: 0 0 0 0; margin-top: 7vh;">Nuochen Lyu</p>
+                        <i class="material-icons" style="color: white; font-size: 12vh;  margin-top: 4.5vh;">person_pin
+                        </i>
+                </div>
+                <div class = "time">
+                    <p style="margin: 0 0 0 0; margin-bottom: 10px;">吕诺晨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lnc0519@gmail.com</p>
+                    <p id="demo"></p>
+                </div>
+            </div>
+            <div class = "right">
+                <div class = "nav-4">
+                    <i class="material-icons icon" style="font-size: 10vh;">import_contacts</i>
+                    <br>
+                    <a href="http://lyulyulyu.herokuapp.com/" class = "nav1">LyuBlog</a>
+                    <p>Welcom to Lyublog! This is a blog system made by myself using ruby on rails. Feel free to share and view ideas. Join us and become a user.</p>
+                    <p>Continue updating</p>
+                </div>
+                <div class = "nav-3">
+                    <i class="material-icons icon" style="font-size: 10vh;">child_care</i>
+                    <br>
+                    <a href="fun.html" class = "nav1">Bird?</a>
+                    <a href="MP3/MP3.html" class = "nav1">Tea?</a>
+                    <p>Lets have some fun! Click "Bird?" for the verrrrryhard flappy bird game</p>
+                    <p>Click "Tea?" for my 3D real world teapot model!</p>
+                    <p>Last update: Dec 2016</p>
+                </div>
+                <div class = "nav-2">
+                    <i class="material-icons icon" style="font-size: 10vh;">event_note</i>
+                    <br>
+                    <a href="https://github.com/nlyu" class = "nav1">project</a>
+                    <p>Coding project including System, Ruby on rails, Website, computer graphics...</p>
+                    <p>Continue updating</p>
+                </div>
+                <div class = "nav-1">
+                    <i class="material-icons icon" style="font-size: 10vh;">face</i>
+                    <br>
+                    <a href="resume.html" class = "nav1">resume</a>
+                    <p>Resume including experience,  education,  skills and merits</p>
+                    <p>Last update: Jan 2017</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://s3.amazonaws.com/codecademy-content/projects/jquery.min.js"></script>
+            <script src="main.js">
+        </script>
+    </body>
+    <script>
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d.toDateString();
+    </script>
+</html>

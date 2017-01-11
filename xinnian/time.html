@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+ <link type = "text/css" rel="stylesheet" href = "time.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'> 
+<title>倒计时</title>
+</head>
+<body>
+    <div class = "timer">
+        <embed id = "mus" height="0" width="0" src="" />
+        <div class = "timer2">
+            <span id="test" style></span>
+            <p style="margin-left: 28%;margin-top: 12%;position:absolute;">Before 2017</p>
+            <p style="margin-left: 33%;margin-top: 24%;position:absolute;background-color: grey; font-size: 3.7vw; color: black;">&nbsp&nbsp&nbsp祝新年快乐--吕诺晨&nbsp&nbsp&nbsp</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function(){
+            var date=new Date(2017,1,1,0,0,0), // 过完除夕才算明年，所以这里时间是到2011年2月2日23点59分59秒
+            time,
+            showDate = function(){
+                if(date.getTime()-new Date().getTime() <= 0){
+                    clearInterval(time);
+                    document.getElementById("test").innerHTML="Happer New Year!";
+                    return;
+                }
+                var now = new Date(),
+                jsd = now.getTime(),
+                hour = Math.floor(jsd/(60*60*1000)),
+                minute = Math.floor(jsd/(60*1000)) - hour*60,
+                second = Math.floor(jsd/1000) - minute*60 - hour*60*60;
+                hour = hour < 10 ? ("0" + hour) : hour;
+                minute = minute < 10 ? ("0" + minute) : minute;
+                second = second < 10 ? ("0" + second) : second;
+                document.getElementById("test").innerHTML = hour +":"+ minute +":"+ second
+            };showDate();
+            time=window.setInterval(showDate,1000);
+        })();
+    </script>
+</body>
+</html></td>
+	  </tr>
+	</table>
