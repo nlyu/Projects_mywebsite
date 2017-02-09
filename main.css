@@ -12,6 +12,7 @@ html, body{
     position: fixed;
     background-image: url(img/shanghai.jpg); 
     background-size: cover;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .container{
@@ -74,9 +75,15 @@ html, body{
 
 
 #demo{
-    font-size: 3.3vh;
+    font-size: 3.0vh;
     bottom: 0px;
     margin: 0 0 0 0;
+}
+
+.social{
+    color: white;
+    margin-top: -5px;
+    margin-bottom: 5px;
 }
 
 .nav-1, .nav-2, .nav-3, .nav-4{
